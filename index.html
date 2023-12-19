@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-     crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>OhMyFood</title>
-</head>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.scss">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+         crossorigin="anonymous" referrerpolicy="no-referrer">
+        <title>OhMyFood</title>
+    </head>
 <body>
     <header>
         <section class="titre">
@@ -21,17 +22,106 @@
             <span class="ville">Paris, Belleville</span>
         </section>
     </header>
-    <main>
-        <section  class="infos">
-            <div class="text1">
-                <h1> Réservez le menu qui vous convient</h1>
-            </div>
-            <div class="text2">
-                <h2>Découvrez des restaurants d’exception,sélectionés par nos soins  </h2>
-            </div>
-            <div class="btn"></div>
-        </section>
-    </main>
     
-</body>
-</html>
+        <section  class="infos">
+            <div class="infos__text">
+                 Réservez le menu qui vous convient
+            </div>
+            <div class="infos__text">
+                <div class="infos__text--petit">Découvrez des restaurants d’exception,sélectionés par nos soins
+                </div>
+            </div>
+            <div class="btn">
+                <button class="btn__rose">Explorer nos restaurants</button>
+            </div>   
+        </section>
+
+        <main>
+            <section class="menu">
+                <h2 class="bold">Fonctionnement</h2>
+                <ol id="choix-menu">
+                    <li>
+                        <span>1</span>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Choisissez un restaurant
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <i class="fa-solid fa-list"></i>
+                        Composez votre menu
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <i class="fa-sharp fa-solid fa-store"></i>
+                        Dégustez au restaurant
+                    </li>
+                </ol>
+            </section>
+            
+            <section class="restaurants">
+                <h2 class="bold">Restaurants</h2>
+                <article class="card">
+                    <a href="Restaurants/restaurant1.html">
+                        <img src="assets/image/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                        <span>Nouveau</span>
+                        <div class="description">
+                            <div class="layout">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="layout-star">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="Restaurants/restaurant2.html">
+                        <img src="assets/image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La note enchantée">
+                        <div class="description">
+                            <div class="layout">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="layout-star">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <span>Nouveau</span>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="Restaurants/restaurant3.html">
+                        <img src="assets/image/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La palette du goût">
+                        <div class="description">
+                            <div class="layout">
+                                <h3>A la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="layout-star">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="Restaurants/restaurant4.html">
+                        <img src="assets/image/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du goût">
+                        <div class="description">
+                            <div class="layout">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="layout-star">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+            </body>
+            </html>
