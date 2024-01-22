@@ -1,0 +1,312 @@
+:root {
+    --primary: #9356dc;
+    --secondary: #ff79da;
+    --tertiary: #99e2d0;
+    --darkgray: darkgray;
+    --dimgray: dimgray;
+    --lightgray: lightgray;
+    --ultralightgray: #EAEAEA;
+    --graywhite: #F6F6F6;
+    --lightpurple: #F5EDFF;
+    --lightgreen: #99E2D0;
+    --green: #2FAF94;
+    --grayblack: #353535;
+}
+.bold {
+    font-weight: bold;
+}
+.gray {
+    color: var(--dimgray);
+}
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1024px;
+}
+
+header {
+    box-shadow: 0 5px 10px lightgrey;
+}
+ header h1 {
+        font-family : 'Shrikhand', cursive;
+        font-size: 2.3rem;
+        margin: 0;
+        padding: 1rem 0;
+        text-align: center;
+ }
+header > div {
+    display: flex;
+}
+.logo {
+    display: flex;
+    flex-basis: 2rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+.logo i {
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.titre {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+.titre h1 {
+    font-family: "Shrikhand", cursive;
+}
+main {
+    background-color: var(--ultralightgray);
+}
+fieldset {
+    border: 0
+}
+main img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 70%;
+    width: 100%;
+}
+
+.titre-menu {
+    position: relative;
+    top: -5rem;
+    border-radius: 3rem 3rem 0 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 95%;
+    padding-left: 2rem;;
+    background-color: var(--ultralightgray);
+}
+.titre-menu h1 {
+    font-family: 'Shrikhand', cursive;
+}
+.titre-menu i {
+    display: flex;
+    font-size: 2rem;
+    padding-right: 3rem;
+}
+   
+
+.layout-star {
+    display: flex;
+    width: 15%;
+    height: 50px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.layout-star .fa-solid.fa-heart { 
+    display: none;
+}
+.layout-star:hover {
+    cursor: pointer;
+    background: linear-gradient(var(--primary) 20%, var(--secondary) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.layout-star:hover .fa-regular.fa-heart {
+    display: none;
+}
+.layout-star:hover .fa-solid.fa-heart { 
+    display: inline;
+}
+.panier {
+    position: absolute;
+    left: 85%;
+    top: 20px;
+    max-width: 1024px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.panier span {
+    padding-left: 10px;
+    color: var(--green);
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrees, .plats, .desserts {
+    padding: 0 1rem 3rem 0;
+}
+.entrees h4, .plats h4, .desserts h4,
+.entrees p, .plats p, .desserts p {
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.entrees h3, .plats h3, .desserts h3 {
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+
+
+    /* Barre verte sous titre de menu */
+.entrees > p, .plats > p, .desserts > p {
+    width: 47px;
+    color: var(--ultralightgray);
+    border-top: 3px solid var(--lightgreen);
+}
+
+
+.article-menu {
+    display: flex;
+    border: 1px solid transparent;
+    background-color: white;
+    width: 470px;
+    height: 60px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    animation: effet-menu 1s ease-in;
+}
+
+.article-menu:hover .select-choix {
+    margin: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.article-menu:hover .select-choix i {
+    animation: spin 1s;
+}
+.article-menu input {
+    width: 470px; 
+    height: 60px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.article-menu label { 
+    position: absolute;
+    width: 470px; 
+    height: 60px;
+    border-radius: 1rem;
+}
+.article-menu label:hover {
+    cursor: pointer;
+}
+
+.article-menu input[type="checkbox"]:checked + label {
+    background-color: var(--green);
+    opacity: 0.2;
+    box-shadow: 0 0 5px 3px black;
+}
+
+.article-menu h2 { 
+    display: none; 
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+.prix {
+    display: flex;
+    width: 4rem;
+    font-weight: bold;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 0.5rem 0.5rem 0;
+    border-radius: 0 1rem 1rem 0;
+}
+.select-choix {
+    display: flex;
+    background-color: var(--lightgreen);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 1rem 1rem 0;
+    width: 4rem;
+    margin-right: -4rem;
+}
+.description:hover, .prix:hover {
+    cursor: pointer;
+}
+
+.btn-explore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-explore label {
+    padding: 1.3rem;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    background: linear-gradient(var(--secondary), var(--primary));
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    box-shadow: 0 3px 10px var(--darkgray);
+}
+.btn-explore label:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 3px 10px var(--secondary);
+}
+.btn-explore p {
+    font-size: 1.8rem;
+    margin: 0;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+    flex-basis: 100%;
+}
+
+footer {
+    background-color: var(--grayblack);
+    color: white;
+    padding: 1rem 0 3rem 2rem;
+}
+footer h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width : 768px) {
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .article-menu, .article-menu input, .article-menu label {
+        width: 350px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .entrees, .plats, .desserts {
+        padding: 0;
+    }
+    .entrees h3, .plats h3, .desserts h3 {
+        margin-left: 1rem;
+        
+    }
+    .entrees > p, .plats > p, .desserts > p {
+        margin-left: 1rem;
+    }
+}
+

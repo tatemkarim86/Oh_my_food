@@ -31,6 +31,7 @@
     --vert-tertiare: #99E2D0;
     --gray-claire: #EAEAEA;
     --gray-tres-claire: #F3F3F3;
+    --grayblack: #353535;
 }
 
 
@@ -311,6 +312,19 @@ body main .restaurants h2 {
     justify-content: center;
     padding-top: 2rem;
     width: 100%;
+}
+footer {
+    background-color: var(--grayblack);
+    color: white;
+    padding: 1rem 0 3rem 2rem;
+}
+footer h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+}
+footer a {
+    text-decoration: none;
+    color: white;
 }
 
 
