@@ -276,8 +276,7 @@ body main .restaurants .card .description .layout-star .fa-solid.fa-heart {
 }
 body main .restaurants .card .description .layout-star:hover {
     cursor: pointer;
-    opacity: 0;
-    background: linear-gradient(#9356dc 20%, #ff79da 100%);
+    background: linear-gradient(var(--violet-primaire) 20%, var(--rose-secondaire) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
