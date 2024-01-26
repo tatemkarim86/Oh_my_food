@@ -150,7 +150,8 @@ main img {
 .entrees h3, .plats h3, .desserts h3 {
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
+    height: 27px;
 }
 
 
@@ -159,6 +160,11 @@ main img {
     width: 47px;
     color: var(--ultralightgray);
     border-top: 3px solid var(--lightgreen);
+}
+.ligne-bleu{
+    display: flex;
+    border-bottom: #2FAF94 3px solid;
+    width: 10%;
 }
 
 
