@@ -22,7 +22,7 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-    max-width: 1024px;
+    max-width: 1500px;
 }
 
 header {
@@ -35,7 +35,7 @@ header {
         padding: 1rem 0;
         text-align: center;
  }
-header > div {
+header  div {
     display: flex;
 }
 .logo {
@@ -64,6 +64,7 @@ main {
 fieldset {
     border: 0
 }
+
 main img {
     height: 400px;
     object-fit: cover;
@@ -292,10 +293,12 @@ footer a {
     color: white;
 }
 
+
 @media (max-width : 768px) {
     .subtitle {
         font-size: 1.2rem;
     }
+
 }
 
 @media (max-width: 530px) {
@@ -314,5 +317,6 @@ footer a {
     .entrees > p, .plats > p, .desserts > p {
         margin-left: 1rem;
     }
+
 }
 
