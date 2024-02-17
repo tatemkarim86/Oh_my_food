@@ -22,7 +22,6 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-    max-width: 1500px;
 }
 
 header {
@@ -59,7 +58,7 @@ header  div {
     font-family: "Shrikhand", cursive;
 }
 main {
-    background-color: var(--ultralightgray);
+    background-color: white
 }
 fieldset {
     border: 0
@@ -74,32 +73,31 @@ main img {
 
 .titre-menu {
     position: relative;
-    top: -5rem;
-    border-radius: 3rem 3rem 0 0;
-    background-color: white;
+
     display: flex;
-    justify-content: space-between;
+    justify-content:start ;
     align-items: center;
     flex-basis: 95%;
-    padding-left: 2rem;;
-    background-color: var(--ultralightgray);
+    /*! padding-left: 2rem; */
 }
 .titre-menu h1 {
     font-family: 'Shrikhand', cursive;
+    font-size: 24px;
 }
 .titre-menu i {
     display: flex;
-    font-size: 2rem;
-    padding-right: 3rem;
+    font-size: 1.5rem;
+    /*! padding-right: 3rem; */
 }
    
 
 .layout-star {
     display: flex;
-    width: 15%;
+    /*! width: 10%; */
     height: 50px;
     align-items: center;
     font-size: 1.5rem;
+    padding-left: 0.5em;
 }
 .layout-star .fa-solid.fa-heart { 
     display: none;
@@ -292,16 +290,40 @@ footer a {
     text-decoration: none;
     color: white;
 }
-
+.elements{
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  position: relative;
+  top: -5rem;
+  border-radius: 3rem 3rem 0 0;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  left: 10%;
+}
 
 @media (max-width : 768px) {
     .subtitle {
         font-size: 1.2rem;
     }
+    .titre-menu{
+        width: 350px;
+
+    }
+
+    .elements{
+        max-width: unset;
+        width: 100%;
+        left: unset;
+    }
 
 }
 
 @media (max-width: 530px) {
+    
     .article-menu, .article-menu input, .article-menu label {
         width: 350px;
         margin: auto;
@@ -319,4 +341,3 @@ footer a {
     }
 
 }
-
