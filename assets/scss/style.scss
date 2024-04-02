@@ -24,7 +24,7 @@
 }
 body {
 	margin: 0 auto;
-	padding: 0 auto;
+	padding: 0;
 	overflow-x: hidden;
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -57,7 +57,7 @@ body {
 				margin-bottom: 1rem;
 				background-color: #EAEAEA;
 				&:focus {
-					outline-color: darkgray;
+					outline-color:darkgray;
 				}
 			}
 			.btn-explore {
